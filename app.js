@@ -4,12 +4,14 @@ import taskRouter from './routes/task.routes.js'
 import managerRouter from './routes/manager.router.js'
 import autherRouter from './routes/authenticPage.js'
 import adminRouter from './routes/admin.route.js'
+import cors from 'cors'
 import connection from './config.js'
 dotenv.config()
 
 
 const app=express()
 
+app.use(cors())
 app.use(express.json())
 app.use('/do',autherRouter)
 app.use('/adminblock',adminRouter)
