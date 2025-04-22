@@ -1,0 +1,4 @@
+PORT='you can give any port no.'
+JWT_KEY='here you should write any secret key that is use in encryptions'
+SALT= 'here you have to write any salt round no.'
+ATLAS_URL='here you can give your atlast cluster connection link'
