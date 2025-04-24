@@ -19,6 +19,11 @@ app.use('/userFetch',taskRouter)
 app.use('/managerFetch',managerRouter)
 
 
+app.get('/',async(req,res)=>{
+    res.send('your server is fine now')
+})
+
+
 app.listen(process.env.PORT,async()=>{
     try {
        await connection 
